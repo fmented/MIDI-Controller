@@ -1,7 +1,7 @@
 {
     "name": "MIDI Controller",
     "short_name": "MIDI Controller",
-    "start_url": "/MIDI-Controller",
+    "start_url": "/MIDI-Controller/play/",
     "scope": "/",
     "icons": [
         {
