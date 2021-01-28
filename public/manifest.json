@@ -1,0 +1,86 @@
+{
+    "name": "MIDI Controller",
+    "short_name": "MIDI Controller",
+    "start_url": "/play",
+    "scope": "/play",
+    "icons": [
+        {
+            "src": "/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/maskable/icon.png",
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose":"maskable"
+        }
+    ],
+
+    "shortcuts": [
+        {
+          "name": "Open Play Drum",
+          "short_name": "Play Drum",
+          "description": "MIDI Drum Controller",
+          "url": "/play/drum",
+          "icons": [{ "src": "/img/maskable/drum.png", "sizes": "1024x1024", "purpose": "any maskable" }]
+        },
+        {
+            "name": "Open Play Piano",
+            "short_name": "Play Piano",
+            "description": "MIDI Piano Controller",
+            "url": "/play/piano",
+            "icons": [{ "src": "/img/maskable/piano.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+        },
+        {
+            "name": "Open Play Launchpad",
+            "short_name": "Play Launchpad",
+            "description": "MIDI Launchpad Controller",
+            "url": "/play/launchpad",
+            "icons": [{ "src": "/img/maskable/launchpad.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+        },
+        {
+            "name": "Open Play Mixer",
+            "short_name": "Play Mixer",
+            "description": "MIDI Mixer Controller",
+            "url": "/play/mixer",
+            "icons": [{ "src": "/img/maskable/mixer.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+        }
+    
+    ],
+
+    "screenshots" : [
+        {
+          "src": "drum.webp",
+          "sizes": "2880x1440",
+          "type": "image/webp"
+        },
+        {
+            "src": "piano.webp",
+            "sizes": "2880x1440",
+            "type": "image/webp"
+        },
+        {
+            "src": "mixer.webp",
+            "sizes": "2880x1440",
+            "type": "image/webp"
+        },
+        {
+            "src": "launchpad.webp",
+            "sizes": "2880x1440",
+            "type": "image/webp"
+        }
+      ],
+
+
+
+    "theme_color": "#222222",
+    "background_color": "#222222",
+    "display": "standalone",
+    "orientation": "landscape"
+}

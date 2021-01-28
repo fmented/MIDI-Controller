@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'midifont';
+  src:  url('fonts/midifont.eot?dxww3a');
+  src:  url('fonts/midifont.eot?dxww3a#iefix') format('embedded-opentype'),
+    url('fonts/midifont.ttf?dxww3a') format('truetype'),
+    url('fonts/midifont.woff?dxww3a') format('woff'),
+    url('fonts/midifont.svg?dxww3a#midifont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="midi-"], [class*=" midi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'midifont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.midi-gears:before {
+  content: "\e90f";
+}
+.midi-control-surface:before {
+  content: "\e900";
+}
+.midi-piano:before {
+  content: "\e901";
+}
+.midi-fader:before {
+  content: "\e902";
+}
+.midi-launchpad:before {
+  content: "\e903";
+}
+.midi-drum:before {
+  content: "\e904";
+}
+.midi-home:before {
+  content: "\e910";
+}
+.midi-house:before {
+  content: "\e910";
+}
+.midi-loop:before {
+  content: "\e905";
+}
+.midi-repeat:before {
+  content: "\e905";
+}
+.midi-player:before {
+  content: "\e905";
+}
+.midi-reload:before {
+  content: "\e905";
+}
+.midi-refresh:before {
+  content: "\e905";
+}
+.midi-update:before {
+  content: "\e905";
+}
+.midi-synchronize:before {
+  content: "\e905";
+}
+.midi-arrows:before {
+  content: "\e905";
+}
+.midi-cog:before {
+  content: "\e906";
+}
+.midi-gear:before {
+  content: "\e906";
+}
+.midi-psetting:before {
+  content: "\e906";
+}
+.midi-collapse:before {
+  content: "\e907";
+}
+.midi-expand:before {
+  content: "\e908";
+}
+.midi-midi:before {
+  content: "\e909";
+}
+.midi-minus:before {
+  content: "\e90a";
+}
+.midi-plus:before {
+  content: "\e90b";
+}
+.midi-media-play:before {
+  content: "\e90c";
+}
+.midi-media-record:before {
+  content: "\e90d";
+}
+.midi-media-stop:before {
+  content: "\e90e";
+}
