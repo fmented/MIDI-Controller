@@ -12,7 +12,7 @@
           width="200"
         />
         </div>
-
+<div v-if="!shown">
         <h2>
           What is this?
         </h2>
@@ -67,7 +67,7 @@
           <img src="../assets/tutor/daw.png" alt="daw" height="350" width="600">
         </figure>
         </details>
-
+</div>
 
         <button @click="$router.push('play')">Start Now</button>
        
@@ -81,7 +81,16 @@
 
 <script>
   export default {
-    name: 'Home',
+    name: 'Info',
+    data(){
+      return {
+        shown: localStorage.getItem('shown')
+      }
+    },
+
+    beforeDestroy(){
+      localStorage.setItem('shown', true)
+    }
   }
 </script>
 

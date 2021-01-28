@@ -177,7 +177,7 @@ export default {
 .error-message>button{
     margin: 2rem;
     padding-top: 5px;
-    width: 10%;
+    width: max-content;
     border: 2px solid white;
     font-size: 1.5em;
     background-color: rgba(0,0,0,0.8);

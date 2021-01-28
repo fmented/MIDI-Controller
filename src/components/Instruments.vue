@@ -2,7 +2,7 @@
   <instument-base>
       <div class="wrapper" ref="ins">
           <figure>         
-              <img src="../assets/maskable/piano.svg" alt="piano" srcset=""  class="p">    
+              <img src="../assets/maskable/piano.svg" alt="piano" srcset="" class="m">    
               <figcaption>Piano</figcaption>   
           </figure>
           <figure>       
