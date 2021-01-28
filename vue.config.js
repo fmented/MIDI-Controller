@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath : 'MIDI-Controller'
+    publicPath : '/MIDI-Controller/'
 }

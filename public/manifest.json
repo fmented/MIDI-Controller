@@ -1,21 +1,21 @@
 {
     "name": "MIDI Controller",
     "short_name": "MIDI Controller",
-    "start_url": "/play",
-    "scope": "/play",
+    "start_url": "/",
+    "scope": "/",
     "icons": [
         {
-            "src": "/img/icons/android-chrome-192x192.png",
+            "src": "./img/icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/icons/android-chrome-512x512.png",
+            "src": "./img/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "/img/maskable/icon.png",
+            "src": "./img/maskable/icon.png",
             "sizes": "1024x1024",
             "type": "image/png",
             "purpose":"maskable"
@@ -28,28 +28,28 @@
           "short_name": "Play Drum",
           "description": "MIDI Drum Controller",
           "url": "/play/drum",
-          "icons": [{ "src": "/img/maskable/drum.png", "sizes": "1024x1024", "purpose": "any maskable" }]
+          "icons": [{ "src": "./img/maskable/drum.png", "sizes": "1024x1024", "purpose": "any maskable" }]
         },
         {
             "name": "Open Play Piano",
             "short_name": "Play Piano",
             "description": "MIDI Piano Controller",
             "url": "/play/piano",
-            "icons": [{ "src": "/img/maskable/piano.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+            "icons": [{ "src": "./img/maskable/piano.png", "sizes": "1024x1024", "purpose":"any maskable" }]
         },
         {
             "name": "Open Play Launchpad",
             "short_name": "Play Launchpad",
             "description": "MIDI Launchpad Controller",
             "url": "/play/launchpad",
-            "icons": [{ "src": "/img/maskable/launchpad.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+            "icons": [{ "src": "./img/maskable/launchpad.png", "sizes": "1024x1024", "purpose":"any maskable" }]
         },
         {
             "name": "Open Play Mixer",
             "short_name": "Play Mixer",
             "description": "MIDI Mixer Controller",
             "url": "/play/mixer",
-            "icons": [{ "src": "/img/maskable/mixer.png", "sizes": "1024x1024", "purpose":"any maskable" }]
+            "icons": [{ "src": "./img/maskable/mixer.png", "sizes": "1024x1024", "purpose":"any maskable" }]
         }
     
     ],
@@ -82,5 +82,6 @@
     "theme_color": "#222222",
     "background_color": "#222222",
     "display": "standalone",
-    "orientation": "landscape"
+    "orientation": "landscape",
+    "categories": ["music", "education", "utilities", "productivity"]
 }
