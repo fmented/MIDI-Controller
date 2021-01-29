@@ -10,6 +10,7 @@
           class="my-3"
           height="200"
           width="200"
+          alt="Logo"
         />
         </div>
 <div v-if="!shown">
@@ -19,7 +20,8 @@
 
         <p>
           This is a Progressive Web Application that can turn your device into a 
-          <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> Controller using Web Technology
+          <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> Controller using <a href="https://caniuse.com/midi">Web MIDI API</a>
+
         </p>
 
         <h2>What can I do with this?</h2>
@@ -90,6 +92,20 @@
 
     beforeDestroy(){
       localStorage.setItem('shown', true)
+    },
+
+    created(){
+      if(this.shown){
+        this.$router.push('play')
+      }
+    },
+
+    beforeMount(){
+      let url = localStorage.getItem('goto')
+      if(url){
+        this.$router.push(url)
+        localStorage.removeItem('goto')
+      }
     }
   }
 </script>
@@ -100,7 +116,7 @@ button{
   margin: 0.5rem;
   background-color: #333;
   border-radius: 5%;
-  border: 2px solid #ccc;
+  border: 2px solid #9AB8AF;
   width: 12rem;
   font-weight: bold;
   font-size: 1.2em;
@@ -115,12 +131,12 @@ summary{
 }
 
 .info>*, img{
-  color: #5c6ee0;
-    filter: drop-shadow(15px 15px 12px #111);
+  color: #9AB8AF;
+  filter: drop-shadow(15px 15px 12px #111);
 }
 
 a:link, a:visited{
-  color: #5c6ee0;
+  color: #9AB8AF;
 }
 
 a:active, a:hover{

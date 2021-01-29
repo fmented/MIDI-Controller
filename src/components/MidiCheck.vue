@@ -12,6 +12,10 @@
             </select>
         </div>
 
+        <div class="helper">
+            <button @click="help">?</button>
+        </div>
+
         <div class="wrapper">
             <label for="output">MIDI Channel</label>
             <select name="channel" id="channel" v-model="channel">
@@ -61,6 +65,11 @@ export default {
     methods:{
         reload(){
             window.location.reload(true)
+        },
+
+        help(){
+            localStorage.removeItem('shown')
+            this.$router.push({name: 'Home'})
         },
 
         noteOn(val){
@@ -164,7 +173,7 @@ export default {
     z-index: 100;
     font-size: 2em;
     user-select: none;
-    color: #ccc;
+    color: #9AB8AF;
     font-weight: bolder;
     flex-direction: column;
     justify-content: center;
@@ -178,10 +187,10 @@ export default {
     margin: 2rem;
     padding-top: 5px;
     width: max-content;
-    border: 2px solid white;
+    border: 1px solid #9AB8AF;
     font-size: 1.5em;
     background-color: rgba(0,0,0,0.8);
-    color: #dcd;
+    color: #9AB8AF;
 }
 
 
@@ -197,14 +206,33 @@ export default {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    min-width: 50%;
+    width: 45%;
     background-color: #444;
-    color: #ccc;
+    color: #9AB8AF;
     height: 10vh;
 }
 
+.helper{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 10%;
+    background-color: #444;
+    color: #9AB8AF;
+    height: 10vh;
+}
+
+.helper>button{
+    font-weight: bolder;
+    height: min-content;
+    width: max-content;
+    background-color: transparent;
+    font-size: 16px;
+    color: #9AB8AF;
+}
+
 a:active, a:visited, a:hover, a{
-    color: #ccc;
+    color: #9AB8AF;
     text-decoration: none;
 }
 
@@ -215,9 +243,9 @@ a:active, a:visited, a:hover, a{
 }
 
 .wrapper>select{
-    min-width: 40%;
-    max-width: 50%;
-    background-color: #dcd;
+    min-width: 25%;
+    max-width: 35%;
+    background-color: #9AB8AF;
     color: black;
     
 }

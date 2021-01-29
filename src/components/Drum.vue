@@ -26,7 +26,8 @@
             <div :class="`tom lo image`" kit="Tom Low" map="45"></div>
             <div :class="`tom hi image`" kit="Tom High" map="50"></div>
             <div :class="`tom med image`" kit="Tom Med" map="48"></div>
-            <div :class="`cymbal crash mid-left down image`" kit="China" map="52">        </div>
+            <div :class="`cymbal crash mid-left down image`" kit="Splash" map="55"></div>
+            <div :class="`cymbal crash middle down image`" kit="China" map="52"></div>
             <div :class="`cymbal crash mid-right down image`" kit="Crash" map="57"></div>
             <div :class="`snare image`" kit="Snare" map="38"></div>
         </div>
@@ -53,7 +54,7 @@ export default {
     computed: {
 
         ratio(){
-            return window.innerWidth/window.innerHeight
+            return window.innerWidth/(window.innerHeight*.8)
         },
 
     },
@@ -65,6 +66,7 @@ export default {
     methods:{
             addListener(kits){
             kits.forEach(i => {
+                i.oncontextmenu = e=>e.preventDefault()
 
                 if(this.$touch){
                 i.ontouchstart = this.noteOn
@@ -192,18 +194,14 @@ export default {
         z-index: 5;
     }
     .hihat{
-        width: 20%;
-        height: calc(20% * var(--ratio));
+        width: 17%;
+        height: calc(17% * var(--ratio));
     }
     .crash{
-        width: 30%;
-        height: calc(30% * var(--ratio));
+        width: 25%;
+        height: calc(25% * var(--ratio));
     }
-    .hihat.close{
-        bottom: -5%;
-        left: -5%;
-        z-index: 1;
-    }       
+         
     .drum>div, .drum{
         display: grid;
         place-items: center;
@@ -221,8 +219,8 @@ export default {
         background-color: grey;
         border-radius: 50%;
         border: 5px solid rgba(0, 0, 0, 0.5);
-        height: calc(25% * var(--ratio));
-        width: 25%;
+        height: calc(22% * var(--ratio));
+        width: 22%;
         transform-origin: 50% 50%;
     }
 
@@ -313,75 +311,95 @@ export default {
 
 
 /* position */
-
+    .hihat.close{
+        bottom: -5%;
+        left: 0%;
+        z-index: 1;
+    }  
     .hihat.open{
-        left: -2%;
+        left: -5%;
         bottom: 22%;
         z-index: 2;
     }
     .crash.left{
-        top: -10%;
+        top: -22%;
         left: -10%;
         z-index: 3;
     }
-    .crash.right{
-        top: -10%;
-        right: -5%;
-        z-index: 3;
-    }
     .crash.mid-left{
-        top: -35%;
-        left: 20%;
+        width: 20%;
+        height: calc(20% * var(--ratio));
+        top: -25%;
+        left: 13%;
         z-index: 2;
     }
     .crash.mid-right{
         top: -35%;
-        right: 20%;
+        right: 18%;
         z-index: 4;
+        width: 22%;
+        height: calc(22% * var(--ratio));
     }   
+    .crash.middle{
+        top: -35%;
+        left: 33%;
+        z-index: 4;
+        width: 26%;
+        height: calc(26% * var(--ratio));
+    }   
+    .crash.right{
+        top: -15%;
+        right: -5%;
+        z-index: 3;
+    }
+    
+    
     .tom.floor{
-        height: calc(25% * var(--ratio));
-        width: 25%;
+        height: calc(18% * var(--ratio));
+        width: 18%;
 
         bottom: 0%;
-        right: -5%;
+        right: -2%;
         z-index: 2;
     }
     .tom.lo{
-        height: calc(20% * var(--ratio));
-        width: 20%;
-        top: 25%;
-        right: 20%;
-        z-index: 2;
-    }
-    .tom.hi{
-        height: calc(20% * var(--ratio));
-        width: 20%;
-        top: 25%;
-        left: 20%;
+        height: calc(16.5% * var(--ratio));
+        width: 16.5%;
+        top: 33%;
+        right: 15%;
         z-index: 2;
     }
     .tom.med{
-        height: calc(20% * var(--ratio));
-        width: 20%;
-        top: 10%;
+        height: calc(16% * var(--ratio));
+        width: 16%;
+        top: 15%;
+        right: 30%;
         z-index: 2;
     }
+
+    .tom.hi{
+        height: calc(15% * var(--ratio));
+        width: 15%;
+        top: 28%;
+        left: 28%;
+        z-index: 2;
+    }
+    
     .kick.left{
         bottom: -10%;
-        left: 20%;
+        left: 25%;
     }
     .kick.right{
         bottom: -10%;
-        right: 20%;
+        right: 25%;
     }
     .snare{
         position: absolute;
-        background-color: white;
+        background-color: #9AB8AF;
         border-radius: 50%;
         border: 5px solid #de9922;
-        height: calc(25% * var(--ratio));
-        width: 25%;
+        height: calc(19% * var(--ratio));
+        width: 19%;
         top: 40%;
 
     }
@@ -485,7 +503,7 @@ export default {
     max-width: 30%;
     overflow: hidden;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid #9AB8AF;
     color: grey;
     font-weight: bold;
     height: 80%;

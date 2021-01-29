@@ -3,19 +3,15 @@
       <div class="wrapper" ref="ins">
           <figure>         
               <img src="../assets/maskable/piano.svg" alt="piano" srcset="" class="m">    
-              <figcaption>Piano</figcaption>   
           </figure>
           <figure>       
               <img src="../assets/maskable/launchpad.svg" alt="launchpad" srcset=""  class="m">
-              <figcaption>Launchpad</figcaption>
           </figure>
           <figure>
               <img src="../assets/maskable/mixer.svg" alt="mixer" srcset="">
-              <figcaption>Mixer</figcaption>
           </figure>
           <figure>
               <img src="../assets/maskable/drum.svg" alt="drum" srcset="">
-              <figcaption>Drum</figcaption>
           </figure>
       </div>
 
@@ -51,32 +47,31 @@ export default {
 }
 
 figure{
-    height: 40%;
-    width: 40%;
-    margin: 2.5%
+    height: 38%;
+    width: 45%;
+    margin: 2.5%;
+    border-radius: 20%;;
 }
 
 figure>img{
-    width: 70%;
-    height: 70%;
-    filter: invert(.7);
+    width: 100%;
+    height: 100%;
+    filter: invert(.8);
 }
+
+
 
 img.m{
-    width: 60%;
-    height: 60%;
-}
 
-img.p{
-    width: 50%;
-    height: 50%;
-    margin: 2.5%;
+    width: 100%;
+    height: 90%;
+    padding-top: 5%;
 }
 
 figure>figcaption{
     font-size: 1em;
     font-weight: bolder;
-    color: #aaa;
+    color: #9AB8AF;
 }
 
 </style>

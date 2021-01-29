@@ -148,7 +148,7 @@ export default {
     height: calc( 100% / var(--r) - 10px);
     width: calc( 100% / var(--c) - 10px);
     background-color: #222;
-    border: 2px solid white;
+    border: 2px solid #9AB8AF;
     position: relative;
     margin: 5px;
     border-radius: 10%;
@@ -206,7 +206,7 @@ export default {
     max-width: 30%;
     overflow: hidden;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid #9AB8AF;
     color: grey;
     font-weight: bold;
     height: 80%;

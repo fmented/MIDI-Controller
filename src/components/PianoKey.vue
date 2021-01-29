@@ -103,7 +103,7 @@ export default {
                         }
 
                     i.onpointerup = (e)=>this.triggerNoteOff(e.target)
-                    // i.onpointerleave = (e)=>this.triggerNoteOff(e.target)
+                    i.onpointerleave = (e)=>this.triggerNoteOff(e.target)
                     i.onpointercancel = (e)=>setTimeout(
                         function(){
                             vm.triggerNoteOff(e.target)
@@ -197,7 +197,7 @@ export default {
     align-self: center;
     min-width: 10%;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid #9AB8AF;
     color: grey;
     font-weight: bold;
 }
@@ -215,7 +215,7 @@ export default {
     position: absolute;
     width: 6.666666666666%;
     left: calc(var(--x-pos) * 6.666666666666% );
-    background-color: white;
+    background-color: #ACB8AF;
     border: 2px solid gray;
     height: 100%;
     z-index: 0;
