@@ -10,18 +10,21 @@
             "src": "./img/icons/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
+            "density":"3.0",
             "purpose":"any"
         },
         {
             "src": "./img/icons/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any"
+            "purpose": "any",
+            "density":"8.0"
         },
         {
             "src": "./img/maskable/icon.png",
             "sizes": "1024x1024",
             "type": "image/png",
+            "density":"10.0",
             "purpose":"maskable"
         }
     ],
